@@ -41,6 +41,7 @@ This is for a large part due to the use of a REST API to interact with the datab
 A future revision could instead send the changed data to the server who
 would then be the only one to access the database server-side.**
 
+To avoid data loss, do regular database dumps. You don't want to lose weeks worth of name ratings!
 
 ### Database setup
 
