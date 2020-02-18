@@ -24,8 +24,8 @@ The currently preferred name among those already voted on is shown at the top of
 This software is ready to run after setting a few basic parameters and assuming that the necessary database and the two tables have been set up.
 
 ```diff
-- In its current version, there is no security to protect the 
-server and especially its database against malicious attacks. 
+- In its current version, there is no security to protect the server and
+- especially its database against malicious attacks and data loss. 
 ```
 
 ### Database setup
