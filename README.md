@@ -1,8 +1,8 @@
 # Kid Namer
 
 Authors:
-	* Yvonne Jansen
-	* Pierre Dragicevic
+* Yvonne Jansen
+* Pierre Dragicevic
 
 License: GNU GPL v3.0
 
