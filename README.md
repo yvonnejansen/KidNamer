@@ -57,13 +57,15 @@ The weight indicates the probability that the name will be suggested when clicki
 
 The table `name_table` can be omitted if the booleans `use_ranks` and `use_randomNames` defined in `variables.js` are set to `false`. However, the system is more useful if the table exists. If no data for ranks or weights are available, then a table just containing names works too if the weight and rank columns have all values set to 1.
 
+The `name_table` can be created by importing the csv holding the desired data. A csv file is provided as an example.
+
 **A table named `ratings`** to hold the ratings that the two persons give to different names. This table needs to have four columns:
 1. name
 1. rank
 1. rating_a
 1. rating_b
 
-The `name_table` can be created by importing the csv holding the desired data. The following SQL instructions can be used to create the required table for the `ratings`
+The following SQL instructions can be used to create the required table for the `ratings`
 ```SQL
 -- phpMyAdmin SQL Dump
 -- version 4.9.0.1
