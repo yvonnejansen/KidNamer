@@ -85,7 +85,7 @@ if($cookie_present && $all_good) {
   <script type="text/javascript" src="js/randomNames.js?<?php echo time();?>"></script>
 
 
-<div class="spinner" id="spinner"><img src="loader.gif"/></div>
+<div class="spinner" id="spinner"><img src="images/loader.gif"/></div>
 
 <div class="best"><span><span id="preferred_name_string"></span>: <b><span id="bestName"></span></b></span>
   <!--<span style="float:right"><input id="showAll" type="checkbox" onchange="changeShowAll();"/></span>-->

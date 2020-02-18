@@ -25,11 +25,12 @@ function getListOfNames() {
     // TODO: find a way to use the name defined in the variable db_tb_name instead of the hardcoded name_table.
       json = xhttp.responseText;
       name_table = JSON.parse(json).name_table;
+      console.log(name_table);
     }
   }
 }
 
-function weightedRandomDraw(name_table){
+function weightedRandomDraw(){
   var weight_index = name_table.columns.indexOf("weight");
   var n = Math.random(), amt=0, amt2=0;
   for(var i=0; i<name_table.records.length; i++){
@@ -49,7 +50,7 @@ function getRandomName() {
 
   do {
     // this is code to get a random name from a weighted list
-    var index = weightedRandomDraw(name_table);
+    var index = weightedRandomDraw();
     newName = name_table.records[index][name_index];
     rank = name_table.records[index][rank_index];
   } while (nameExists(newName));
