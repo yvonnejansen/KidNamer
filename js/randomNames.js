@@ -29,12 +29,12 @@ function getListOfNames() {
   }
 }
 
-function randomLoop(weight){
+function weightedRandomDraw(name_table){
   var weight_index = name_table.columns.indexOf("weight");
-  var n=Math.random() * 18.45011,amt=0, amt2=0;
-  for(var i=0;i<weight.records.length;i++){
+  var n = Math.random(), amt=0, amt2=0;
+  for(var i=0; i<name_table.records.length; i++){
     amt = amt2;
-    amt2+=weight.records[i][weight_index]; 
+    amt2 += name_table.records[i][weight_index]; 
     if(amt < n && n <= amt2){
       return i;
     }
@@ -49,11 +49,8 @@ function getRandomName() {
 
   do {
     // this is code to get a random name from a weighted list
-    var index = randomLoop(name_table);
+    var index = weightedRandomDraw(name_table);
     newName = name_table.records[index][name_index];
-    // this is for a random name from a list of names with ranks
-    //var index = Math.round(Math.random() * name_table.records.length);
-    //newName = name_table.records[index][name_index];
     rank = name_table.records[index][rank_index];
   } while (nameExists(newName));
   // To simplify the return value, we write the rank at the end of the name and separate
