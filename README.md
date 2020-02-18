@@ -44,16 +44,20 @@ would then be the only one to access the database server-side.**
 
 Edit the file `credentials.php` such that the variables indicate valid values for the database name, a username and a password with read and write access to the database indicated.
 
-You will need two tables in your database. 
+You will need two tables in your database.
+
 1. A table named `ratings` to hold the ratings that you give to different names. This table needs to have four columns:
 	1. name
 	1. rank
 	1. rating_a
 	1. rating_b
-1. A table named `name_table` which contains a list of names with a rank and a weight. The sum of the weights of all names should sum up to 1. Otherwise, the random choice of names based on weights won't work correctly. The higher the weight, the more likely a name will be suggested when using the `Get a suggestion` feature. This table can be omitted if the boolean `useRanks` defined in `variables.js` is set to `false`. However, the system is more useful if the table exists. If no data for ranks or weights are available, then a table just containing names works too if the weight and rank columns have all values set to 1. The table needs to have three columns:
-	1. name
-	1. weight
-	1. rank
+1. A table named `name_table` which contains a list of names with a weight and a rank:
+	1. name (type varchar)
+	1. weight (type float)
+	1. rank (type int)
+The weight indicates the probability that the name will be suggested when clicking on `Get a suggestion`. All weights in the table **must sum up to 1**. You can derive weights the way you wish. In the provided example csv, weights are a function of a name's length (with a preference for short names) and the number of people who were given the name in the past few years (with a preference for popular names). Even if you are not seeking a popular name, it may make sense to give higher weight to popular names so that they are suggested first. The rank column indicates the ranking of each name in terms of popularity, i.e., 1 is the most common name, 2 is the second most common name, etc. This value is just displayed in the user interface to provide guidance, and is not used in any calculation.
+
+The table `name_table` can be omitted if the booleans `use_ranks` and `use_randomNames` defined in `variables.js` are set to `false`. However, the system is more useful if the table exists. If no data for ranks or weights are available, then a table just containing names works too if the weight and rank columns have all values set to 1. 
 
 The `name_table` can be created by importing the csv holding the desired data. The following SQL instructions can be used to create the required table for the `ratings`
 ```SQL
