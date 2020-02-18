@@ -34,6 +34,9 @@ This software is ready to run after setting a few basic parameters and assuming 
 ```diff
 - In its current version, there is no security to protect the server and
 - especially its database against malicious attacks and data loss. 
+- This is for a large part due to the use of a REST API to interact with the database.
+- A future revision could instead send the changed data to the server who
+- would then be the only one to access the database server-side.
 ```
 
 ### Database setup
