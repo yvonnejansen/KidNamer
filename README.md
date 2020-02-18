@@ -51,7 +51,7 @@ You will need two tables in your database.
 	1. rank
 	1. rating_a
 	1. rating_b
-1. A table named `name_table` which contains a list of names with a rank and a weight. The weight should be between 0 and 1. The higher the weight, the more likely a name will be suggested when using the `Get a suggestion` feature. This table can be omitted if the boolean `useRanks` defined in `variables.js` is set to `false`. However, the system is more useful if the table exists. If no data for ranks or weights are available, then a table just containing names works too if the weight and rank columns have all values set to 1. The table needs to have three columns:
+1. A table named `name_table` which contains a list of names with a rank and a weight. The sum of the weights of all names should sum up to 1. Otherwise, the random choice of names based on weights won't work correctly. The higher the weight, the more likely a name will be suggested when using the `Get a suggestion` feature. This table can be omitted if the boolean `useRanks` defined in `variables.js` is set to `false`. However, the system is more useful if the table exists. If no data for ranks or weights are available, then a table just containing names works too if the weight and rank columns have all values set to 1. The table needs to have three columns:
 	1. name
 	1. weight
 	1. rank
