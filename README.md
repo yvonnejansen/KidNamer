@@ -48,7 +48,7 @@ Edit the file `credentials.php` such that the variables indicate valid values fo
 
 You will need two tables in your database.
 
-**A table named `name_table`** which contains a list of names with a weight and a rank:
+**A table named `name_table`** which contains a corpus of candidate names with a weight and a rank:
 1. name (type varchar)
 1. weight (type float)
 1. rank (type int)
