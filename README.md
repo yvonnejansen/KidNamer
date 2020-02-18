@@ -20,9 +20,9 @@ The basic idea of this app is to enable two people to vote independently and sec
 
 Names are scored on a scale between 0 and 20. Newly added names are assigned a score of 21 such that they always appear at the very top. Scores are entered using a slider control. For names on which one has not yet voted, the slider is not shown but it is nonetheless possible to click or tap anywhere in the corresponding area to quickly set a value. 
 
-Clicking on a name opens a new tab loading background information on that name from the page [behindthename.com](behindthename.com).
+Clicking on a name opens a new tab loading background information on that name from the page [behindthename.com](behindthename.com). This shows, among other things, how popular a name is in different countries.
 
-The currently preferred name among those already voted on is shown at the top of the page. If multiple names have the same score, then they will all appear there.
+The system maintains an aggregate score for every name obtained by averaging the ratings from the two people. If a name is among the top five among those already rated, it will be displayed in bold. In addition, the currently preferred name is shown at the top of the page. Multiple names will be displayed in case of ties. 
 
 # Setup
 
