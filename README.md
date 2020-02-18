@@ -46,7 +46,7 @@ Edit the file `credentials.php` such that the variables indicate valid values fo
 
 You will need two tables in your database.
 
-1. A table named `name_table` which contains a list of names with a weight and a rank:
+**A table named `name_table`** which contains a list of names with a weight and a rank:
 	1. name (type varchar)
 	1. weight (type float)
 	1. rank (type int)
@@ -55,7 +55,7 @@ The weight indicates the probability that the name will be suggested when clicki
 
 The table `name_table` can be omitted if the booleans `use_ranks` and `use_randomNames` defined in `variables.js` are set to `false`. However, the system is more useful if the table exists. If no data for ranks or weights are available, then a table just containing names works too if the weight and rank columns have all values set to 1.
 
-1. A table named `ratings` to hold the ratings that you give to different names. This table needs to have four columns:
+**A table named `ratings`** to hold the ratings that the two persons give to different names. This table needs to have four columns:
 	1. name
 	1. rank
 	1. rating_a
