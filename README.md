@@ -14,7 +14,7 @@ Kid Namer is a web app that works on any platform and does not require to instal
 
 # User interface
 
-TODO: add screenshots.
+*TODO: add screenshots.*
 
 The basic idea of this app is to enable two people to vote independently and secretly on different name suggestions. Both can suggest new names, either by entering a name manually in the text field or by clicking the button. If a name already exists, the page will scroll to the location of the name. 
 
