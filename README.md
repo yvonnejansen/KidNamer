@@ -8,9 +8,9 @@ License: GNU GPL v3.0
 
 # Description
 
-The app allows two people to find names they prefer the most by independently and asynchronously rating name suggestions over a period of time (e.g., a few weeks or months). At any time, each of the two persons can open the app and suggest a new name, or rate a name chosen at random from a corpus. Each of the two persons could, for example, rate about ten names a day. When person A opens the app, they will be invited to rate the names that person B has rated, but will not see B's ratings. This secrecy ensures independent rating, which for example prevents situations where both people like a name but think the other person does not like it, and will thus never mention it. The two people are of course free to discuss at any time, especially about which criteria they think are the most important.
+Kid namer allows two people to find names they prefer the most by independently and asynchronously rating name suggestions over a period of time. At any time, each of the two persons can open the app and suggest new names, or rate names chosen at random from a corpus. Each of the two persons could, for example, rate about ten names a day, over the course of a few weeks or months. When a person opens the app, they will be invited to rate the new names that the other person has rated, though they will not see their ratings. They will also not know whether a name has been manually added by the other person or chosen randomly by the system. This secrecy ensures independent rating, which for example prevents situations where both people like a name but think the other person does not like it, and will thus never mention it. The two people are of course free to discuss at any time, especially about which criteria they think are important when choosing a name.
 
-The app is a web app that works on any platform and does not require to install anything, once the sever has been set up (see below). Currently, **setting up this app requires good computer knowledge**. Hopefully it won't be the case in the future.
+Kid namer is a web app that works on any platform and does not require to install anything, once the sever has been set up (see below). However, **setting up and customizing this app currently requires solid computer knowledge**. Hopefully it won't be the case in the future.
 
 # User interface
 
