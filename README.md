@@ -8,11 +8,19 @@ License: GNU GPL v3.0
 
 # Description
 
+The app allows two people to find names they prefer the most by independently and asynchronously rating name suggestions over a period of time (e.g., a few weeks or months). At any time, each of the two persons can open the app and suggest a new name, or rate a name chosen at random from a corpus. Each of the two persons could, for example, rate about ten names a day. When person A opens the app, they will be invited to rate the names that person B has rated, but will not see B's ratings. This secrecy ensures independent rating, which for example prevents situations where both people like a name but think the other person does not like it, and will thus never mention it. The two people are of course free to discuss at any time, especially about which criteria they think are the most important.
+
+The app is a web app that works on any platform and does not require to install anything, once the sever has been set up (see below). Currently, **setting up this app requires good computer knowledge**. Hopefully it won't be the case in the future.
+
+# User interface
+
 The basic idea of this app is to enable two people to vote independently and secretly on different name suggestions. Both can suggest new names, either by entering a name manually in the text field or by clicking the button. If a name already exists, the page will scroll to the location of the name. 
 
 Names are scored on a scale between 0 and 20. Newly added names are assigned a score of 21 such that they always appear at the very top. Scores are entered using a slider control. For names on which one has not yet voted, the slider is not shown but it is nonetheless possible to click or tap anywhere in the corresponding area to quickly set a value.
 
-The currently preferred name among those already voted on is shown at the top of the page. If multiple names have the same score, then they will all appear there. 
+The currently preferred name among those already voted on is shown at the top of the page. If multiple names have the same score, then they will all appear there.
+
+# Setup
 
 ## Requirements
 
