@@ -22,7 +22,7 @@ Kid Namer is a web app that works on any platform and does not require to instal
 
 The basic idea of this app is to enable two people to vote independently and secretly on different name suggestions. Both can suggest new names, either by entering a name manually in the text field or by clicking the button. If you type a name that already exists, the page will scroll to that name to show you its rating. 
 
-Names are scored on a scale between 0 and 20, and sorted from highest to lowest score. Newly added names are assigned a score of 21 such that they always appear at the very top. Scores are entered using a slider control. For names on which one has not yet voted, the slider is not shown but it is nonetheless possible to click or tap anywhere in the corresponding area to quickly set a value. 
+Names are scored on a scale between 0 and 20, and sorted from highest to lowest score. Newly added names are assigned a temporary score of 21 such that they always appear at the very top. Scores are entered using a slider control. For names on which one has not yet voted, the slider is not shown but it is nonetheless possible to click or tap anywhere in the corresponding area to quickly set a value. 
 
 Clicking on a name opens a new tab loading background information on that name from the page [behindthename.com](behindthename.com). This shows, among other things, how popular a name is in different countries.
 
