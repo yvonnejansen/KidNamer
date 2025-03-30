@@ -8,7 +8,7 @@ License: GNU GPL v3.0
 
 # Description
 
-**Kid Namer** helps two people find names they both like by independently rating name suggestions over time. Each person can access Kid Namer on their phone or computer whenever they want to suggest new names or rate randomly selected ones from a corpus.
+**Kid Namer** helps two people find kid names they both like by independently rating name suggestions over time. Each person can access Kid Namer on their phone or computer whenever they want to suggest new names or rate randomly selected ones from a corpus.
 
 For example, each person might rate about ten names per day over several weeks or months. Whenever one of them opens Kid Namer, they'll see the names the other person has rated and be prompted to rate them too—without seeing each other's ratings. They also won’t know whether a name was manually added by their partner or randomly selected.
 
