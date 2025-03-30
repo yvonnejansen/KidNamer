@@ -8,9 +8,13 @@ License: GNU GPL v3.0
 
 # Description
 
-Kid Namer allows two persons to find names they both like by independently rating name suggestions over a period of time. Each of the two persons can open Kid Namer whenever they wish and suggest new names, or rate names chosen at random from a corpus. Each of the two persons could, for example, rate about ten names a day, over the course of a few weeks or months. Each time one of them opens Kid Namer, they will see the new names that the other person has rated and will be invited to rate them as well, though people don't see each other's ratings. They also don't know whether a name has been manually added by the other person or picked at random. This secrecy is meant to allow independent rating, which for example can prevent situations where both people like a name but think the other person does not like it, and will thus never mention it. The two people are of course free to discuss at any time, especially about which criteria they think are important when choosing a name. Name ratings can be changed at any time, so people are free to change their minds.
+**Kid Namer** helps two people find names they both like by independently rating name suggestions over time. Each person can access Kid Namer on their phone or computer whenever they want to suggest new names or rate randomly selected ones from a corpus.
 
-Kid Namer is a web app that works on any platform and does not require to install anything on the client devices, once the server has been set up (see below). However, **setting up and configuring the server currently requires solid computer knowledge**. Hopefully it won't be the case in the future.
+For example, each person might rate about ten names per day over several weeks or months. Whenever one of them opens Kid Namer, they'll see the names the other person has rated and be prompted to rate them too—without seeing each other's ratings. They also won’t know whether a name was manually added by their partner or randomly selected.
+
+This anonymity ensures unbiased ratings and prevents situations where both like a name but assume the other doesn’t, so they never bring it up. Of course, the two can discuss criteria anytime. Ratings can be changed at any moment, allowing for flexibility and reconsideration.
+
+Kid Namer is a web app that works on any platform and does not require to install anything on the client devices, once the server has been set up (see below). However, setting up and configuring the server currently requires good computer knowledge. Hopefully it won't be the case in future versions.
 
 # User interface
 
